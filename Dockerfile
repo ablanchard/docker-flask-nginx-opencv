@@ -74,9 +74,9 @@ RUN apt-get install -y --fix-missing \
 
 RUN cd ~ && \
     mkdir -p dlib && \
-    git clone -b 'v19.9' --single-branch https://github.com/davisking/dlib.git dlib/ && \
+    git clone -b 'v19.17' --single-branch https://github.com/davisking/dlib.git dlib/ && \
     cd  dlib/ && \
-python3 setup.py install --yes USE_AVX_INSTRUCTIONS
+python3 setup.py install 
 
 
 RUN pip install face_recognition

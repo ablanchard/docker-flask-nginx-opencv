@@ -1,8 +1,5 @@
 FROM tiangolo/uwsgi-nginx:python3.7
 
-LABEL maintainer="Alexandre Blanchard <alexandre.blanchard@protonmail.com>"
-
-
 RUN apt-get update \
     && apt-get install -y \
         build-essential \
